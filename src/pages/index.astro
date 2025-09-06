@@ -1,0 +1,234 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+
+const chapters = [
+  {
+    title: "Prérequis et Outils",
+    desc: "Configuration de l'environnement de développement avec VS Code, Laragon et les outils essentiels",
+    link: "/blog/chapter-1-prerequisites",
+    topics: [
+      "Installation VS Code",
+      "Configuration Laragon/XAMPP",
+      "Outils de développement"
+    ]
+  },
+  {
+    title: "Installation Laravel 10",
+    desc: "Installation complète de Laravel 10 et création du premier projet sur Windows",
+    link: "/blog/chapter-2-installation",
+    topics: [
+      "Installation via Composer",
+      "Configuration initiale",
+      "Premier lancement"
+    ]
+  },
+  {
+    title: "Structure du Projet",
+    desc: "Compréhension approfondie de l'architecture MVC et de la structure Laravel",
+    link: "/blog/chapter-3-project-structure",
+    topics: [
+      "Architecture MVC",
+      "Dossiers importants",
+      "Conventions de nommage"
+    ]
+  },
+  {
+    title: "Configuration des Routes",
+    desc: "Maîtrise du système de routage Laravel avec paramètres et middleware",
+    link: "/blog/chapter-4-routes-basics",
+    topics: [
+      "Routes de base",
+      "Routes ressources",
+      "Middleware et groupes"
+    ]
+  },
+  {
+    title: "Setup Gestion Utilisateurs",
+    desc: "Préparation de la base de données, modèles et migrations pour les utilisateurs",
+    link: "/blog/chapter-5-user-management-setup",
+    topics: [
+      "Migrations avancées",
+      "Modèles Eloquent",
+      "Seeders et factories"
+    ]
+  },
+  {
+    title: "CRUD Complet",
+    desc: "Implémentation complète des fonctionnalités Create, Read, Update, Delete",
+    link: "/blog/chapter-6-user-crud",
+    topics: [
+      "Interface utilisateur",
+      "Validation des données",
+      "Recherche et filtrage"
+    ]
+  },
+  {
+    title: "Intégration TailwindCSS",
+    desc: "Design moderne et responsive avec TailwindCSS et composants réutilisables",
+    link: "/blog/chapter-7-tailwindcss-integration",
+    topics: [
+      "Configuration Tailwind",
+      "Composants Blade",
+      "Design responsive"
+    ]
+  },
+  {
+    title: "Raccourcis et Bonnes Pratiques",
+    desc: "Astuces de productivité, raccourcis et techniques professionnelles",
+    link: "/blog/chapter-8-shortcuts-tips",
+    topics: [
+      "Raccourcis VS Code",
+      "Commandes Artisan",
+      "Bonnes pratiques"
+    ]
+  }
+];
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body class="bg-gradient-to-b from-blue-50 via-white to-white min-h-screen flex flex-col">
+    <Header class="fixed top-0 left-0 right-0 z-50" />
+    <main class="container mx-auto px-4 py-8">
+      <!-- Hero Section -->
+      <section class="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl text-white p-8 mb-12 flex flex-col items-center gap-8 shadow-lg">
+        <div class="flex-shrink-0">
+          <img src="/assets/logo_md.png" alt="UniTechs Logo" class="w-72 h-48 rounded-xl shadow-lg" />
+        </div>
+        <div>
+          <h1 class="text-3xl md:text-4xl font-extrabold mb-2">🚀 Formation Laravel 10 avec TailwindCSS</h1>
+          <p class="instructor mb-2">Par <strong>Fredie TUEGUEM</strong> - Formateur à UniTechs</p>
+          <p class="mb-4">
+            Maîtrisez Laravel 10 en créant une application complète de gestion des utilisateurs.
+            Formation pratique et progressive pour développeurs débutants.
+          </p>
+          <div class="flex flex-wrap gap-4 text-white justify-center">
+            <a href="/blog" class="bg-white text-blue-700 font-bold px-6 py-3 rounded-lg shadow hover:bg-blue-100 transition">Commencer le cours</a>
+            <a href="/about" class="border-2 border-white text-white font-bold px-6 py-3 rounded-lg hover:bg-white hover:text-blue-700 transition">À propos</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Objectifs -->
+      <section class="mb-12">
+        <div class="text-center mb-8">
+          <h2 class="text-2xl font-bold text-blue-700 mb-2">🎯 Objectifs de la formation</h2>
+          <p class="text-gray-600">Une formation complète et pratique pour maîtriser le développement web moderne</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:shadow-lg transition">
+            <span class="text-4xl mb-2">💻</span>
+            <h3 class="text-blue-700 font-semibold mb-1">Laravel 10</h3>
+            <p class="text-gray-700 text-center">Maîtrisez le framework PHP le plus populaire avec ses dernières fonctionnalités</p>
+          </div>
+          <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:shadow-lg transition">
+            <span class="text-4xl mb-2">🎨</span>
+            <h3 class="text-blue-700 font-semibold mb-1">TailwindCSS</h3>
+            <p class="text-gray-700 text-center">Créez des interfaces modernes et responsives avec ce framework CSS utilitaire</p>
+          </div>
+          <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:shadow-lg transition">
+            <span class="text-4xl mb-2">👥</span>
+            <h3 class="text-blue-700 font-semibold mb-1">CRUD Complet</h3>
+            <p class="text-gray-700 text-center">Développez un système complet de gestion des utilisateurs avec toutes les fonctionnalités</p>
+          </div>
+          <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:shadow-lg transition">
+            <span class="text-4xl mb-2">⚡</span>
+            <h3 class="text-blue-700 font-semibold mb-1">Bonnes Pratiques</h3>
+            <p class="text-gray-700 text-center">Apprenez les techniques professionnelles et les standards de l'industrie</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Programme du cours -->
+      <section class="mb-12">
+        <div class="text-center mb-8">
+          <h2 class="text-2xl font-bold text-blue-700 mb-2">📚 Programme du cours</h2>
+          <p class="text-gray-600">8 chapitres progressifs pour une maîtrise complète</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {chapters.map((chap, idx) => (
+            <a href={chap.link} class="flex bg-white rounded-xl shadow p-6 hover:shadow-lg transition border-l-4 border-blue-600 gap-6 animate-slide-in">
+              <div class="flex items-center justify-center font-bold text-2xl text-blue-600 bg-blue-50 rounded-full w-14 h-14 shadow-lg">
+                {(idx + 1).toString().padStart(2, "0")}
+              </div>
+              <div class="flex-1">
+                <h3 class="text-blue-700 font-semibold text-lg mb-1">{chap.title}</h3>
+                <p class="text-gray-700 mb-2">{chap.desc}</p>
+                <ul class="list-none pl-0">
+                  {chap.topics.map(topic => (
+                    <li class="relative pl-6 mb-1 text-gray-600 text-sm">
+                      <span class="absolute left-0 text-blue-400 font-bold">✓</span>
+                      {topic}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <!-- Technologies -->
+      <section class="mb-12">
+        <div class="text-center mb-8">
+          <h2 class="text-2xl font-bold text-blue-700 mb-2">🛠️ Technologies utilisées</h2>
+          <p class="text-gray-600">Stack technologique moderne et professionnel</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:shadow-lg transition">
+            <span class="text-4xl mb-2">🚀</span>
+            <h3 class="text-blue-700 font-semibold mb-1">Laravel 10</h3>
+            <p class="text-gray-700 text-center">Framework PHP élégant avec architecture MVC robuste</p>
+          </div>
+          <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:shadow-lg transition">
+            <span class="text-4xl mb-2">🎨</span>
+            <h3 class="text-blue-700 font-semibold mb-1">TailwindCSS</h3>
+            <p class="text-gray-700 text-center">Framework CSS utilitaire pour un design moderne et responsive</p>
+          </div>
+          <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:shadow-lg transition">
+            <span class="text-4xl mb-2">🗄️</span>
+            <h3 class="text-blue-700 font-semibold mb-1">MySQL</h3>
+            <p class="text-gray-700 text-center">Base de données relationnelle performante et fiable</p>
+          </div>
+          <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:shadow-lg transition">
+            <span class="text-4xl mb-2">📄</span>
+            <h3 class="text-blue-700 font-semibold mb-1">Blade</h3>
+            <p class="text-gray-700 text-center">Moteur de templates Laravel puissant et intuitif</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl shadow-lg p-8 text-white text-center mb-8">
+        <h2 class="text-2xl md:text-3xl font-bold mb-2">🚀 Prêt à commencer votre formation ?</h2>
+        <p class="mb-6">Rejoignez des centaines d'étudiants qui ont déjà maîtrisé Laravel avec UniTechs</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+          <a href="/blog" class="bg-white text-blue-700 font-bold px-8 py-3 rounded-lg shadow hover:bg-blue-100 transition">Commencer maintenant</a>
+          <a href="/about" class="border-2 border-white text-white font-bold px-8 py-3 rounded-lg hover:bg-white hover:text-blue-700 transition">En savoir plus</a>
+        </div>
+        <div class="flex flex-wrap gap-6 justify-center">
+          <div class="flex items-center gap-2 text-lg">
+            <span>✅</span>
+            <span>Formation 100% pratique</span>
+          </div>
+          <div class="flex items-center gap-2 text-lg">
+            <span>⏰</span>
+            <span>À votre rythme</span>
+          </div>
+          <div class="flex items-center gap-2 text-lg">
+            <span>🎯</span>
+            <span>Projet concret</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
