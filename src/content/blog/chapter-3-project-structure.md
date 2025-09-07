@@ -2,7 +2,7 @@
 title: "Chapitre 3: Structure du Projet Laravel et Fichiers Utiles"
 description: "Comprenez la structure complète d'un projet Laravel 10, les fichiers importants et leur rôle dans l'application"
 pubDate: '2025-09-04'
-heroImage: "/blog-placeholder-3.jpg"
+heroImage: "/structure-projet.jpg"
 ---
 
 

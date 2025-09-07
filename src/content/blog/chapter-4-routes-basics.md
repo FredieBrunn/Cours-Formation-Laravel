@@ -2,7 +2,7 @@
 title: 'Chapitre 4: Configuration des Routes Laravel'
 description: 'Maîtrisez le système de routage Laravel : routes simples, paramètres, groupes, middleware et routes nommées'
 pubDate: '2025-09-04'
-heroImage: '/blog-placeholder-4.jpg'
+heroImage: '/laravel-routing.jpg'
 ---
 
 

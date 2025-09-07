@@ -1,8 +1,8 @@
 ---
 title: 'Chapitre 2: Installation de Laravel 10 sur Windows'
 description: 'Guide complet pour installer Laravel 10 et créer votre premier projet sur Windows avec Composer'
-pubDate: '2024-12-02'
-heroImage: '/installing-laravel.png'
+pubDate: '2025-09-04'
+heroImage: '/installing-laravel.jpg'
 ---
 
 <div class="flex flex-col items-center text-center mb-8">

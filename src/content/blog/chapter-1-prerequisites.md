@@ -2,7 +2,7 @@
 title: 'Chapitre 1: Prérequis et Outils Nécessaires'
 description: 'Découvrez tous les outils et prérequis nécessaires pour commencer votre apprentissage de Laravel 10 sur Windows'
 pubDate: '2025-09-04'
-heroImage: '/cour-laravel10.png'
+heroImage: '/laravel.jpg'
 ---
 
 <br><br>
