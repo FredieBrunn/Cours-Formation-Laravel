@@ -247,7 +247,7 @@ heroImage: '/laravel.jpg'
 
 ---
 
-<div class="flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4 mt-6 sm:mt-8">
+<div class="flex flex-row justify-between items-center gap-3 sm:gap-4 mt-6 sm:mt-8">
   <a href="/" class="pointer-events-none opacity-50 bg-gray-200 text-gray-500 px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold flex items-center gap-2 text-xs sm:text-base">
     <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
     Accueil

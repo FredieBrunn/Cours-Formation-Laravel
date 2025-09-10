@@ -395,7 +395,7 @@ Route::get('/bonjour', function () {
 
 ---
 
-<div class="flex flex-col md:flex-row justify-between items-center gap-2 sm:gap-4 mt-6 sm:mt-8">
+<div class="flex flex-row justify-between items-center gap-2 sm:gap-4 mt-6 sm:mt-8">
   <a href="/blog/chapitre-1-prerequisites" class="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gray-100 text-blue-700 rounded-lg shadow hover:bg-blue-300 transition font-semibold text-xs sm:text-base">
     ⬅️ Chapitre précédent
   </a>

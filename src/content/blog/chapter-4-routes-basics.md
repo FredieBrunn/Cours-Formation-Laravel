@@ -36,6 +36,7 @@ heroImage: '/laravel-routing.jpg'
     <span>Organiser les routes avec des groupes</span>
   </div>
 </div>
+<br><br>
 
 ---
 
@@ -65,6 +66,7 @@ Route::post('/users', [UserController::class, 'store']);     // Créer
 Route::put('/users/{id}', [UserController::class, 'update']); // Modifier
 Route::delete('/users/{id}', [UserController::class, 'destroy']); // Supprimer
 ```
+<br><br>
 
 ---
 
@@ -89,6 +91,7 @@ Route::get('/users/{id}', [UserController::class, 'show'])
 Route::get('/users/{name}', [UserController::class, 'showByName'])
     ->where('name', '[A-Za-z]+'); // Seulement des lettres
 ```
+<br><br>
 
 ---
 
@@ -121,6 +124,7 @@ Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('users.
     <!-- Champs du formulaire -->
 </form>
 ```
+<br><br>
 
 ---
 
@@ -152,6 +156,7 @@ Route::resource('users', UserController::class)->only(['index', 'show', 'create'
 // Exclure certaines routes
 Route::resource('users', UserController::class)->except(['destroy']);
 ```
+<br><br>
 
 ---
 
@@ -179,6 +184,7 @@ Route::resource('users', UserController::class)->middleware('auth');
 - `guest` : Utilisateur non authentifié
 - `verified` : Email vérifié
 - `throttle` : Limitation du taux de requêtes
+<br><br>
 
 ---
 
@@ -222,6 +228,7 @@ Route::prefix('admin')
         Route::resource('/users', AdminUserController::class);
     });
 ```
+<br><br>
 
 ---
 
@@ -247,6 +254,7 @@ public function boot()
     Route::pattern('slug', '[a-z0-9-]+');
 }
 ```
+<br><br>
 
 ---
 
@@ -397,6 +405,7 @@ class UserController extends Controller
     </li>
   </ol>
 </div>
+<br><br>
 
 ---
 
@@ -424,6 +433,7 @@ class UserController extends Controller
     <code>php artisan route:cache</code>
   </div>
 </div>
+<br><br>
 
 ---
 
@@ -453,6 +463,7 @@ class UserController extends Controller
     <li>Utilisez la liaison de modèle quand possible</li>
   </ul>
 </div>
+<br><br>
 
 ---
 
@@ -472,6 +483,7 @@ Route::get('/users/{user}', function (User $user) {
     return view('users.show', compact('user'));
 });
 ```
+<br><br>
 
 ---
 
@@ -486,10 +498,11 @@ Route::get('/users/{user}', function (User $user) {
   <div>✔️ Vous avez créé le UserController complet</div>
   <div>✔️ Vous pouvez lister et filtrer les routes</div>
 </div>
+<br><br>
 
 ---
 
-<div class="flex flex-col md:flex-row justify-between items-center gap-2 sm:gap-4 mt-6 sm:mt-8">
+<div class="flex flex-row justify-between items-center gap-2 sm:gap-4 mt-6 sm:mt-8">
   <a href="/blog/chapter-3-project-structure" class="inline-flex items-center px-4 py-2 sm:px-6 sm:py-3 bg-gray-100 text-blue-700 rounded-lg shadow hover:bg-blue-50 transition font-semibold text-xs sm:text-base">
     ⬅️ Chapitre précédent
   </a>
