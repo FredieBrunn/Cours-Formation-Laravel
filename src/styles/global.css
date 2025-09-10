@@ -35,17 +35,17 @@
 	font-display: swap;
 }
 body {
-	font-family: 'Atkinson', sans-serif;
-	margin: 0;
-	padding: 0;
-	text-align: left;
-	background: linear-gradient(var(--gray-gradient)) no-repeat;
-	background-size: 100% 600px;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
-	color: rgb(var(--gray-dark));
-	font-size: 20px;
-	line-height: 1.7;
+    font-family: 'Atkinson', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    background: linear-gradient(var(--gray-gradient)) no-repeat;
+    background-size: 100% 600px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    color: rgb(var(--gray-dark));
+    font-size: 20px;
+    line-height: 1.7;
 }
 main {
     width: 100%;
@@ -65,19 +65,19 @@ h6 {
 	line-height: 1.2;
 }
 h1 {
-	font-size: 3.052em;
+    font-size: 3.052em;
 }
 h2 {
-	font-size: 2.441em;
+    font-size: 2.441em;
 }
 h3 {
-	font-size: 1.953em;
+    font-size: 1.953em;
 }
 h4 {
-	font-size: 1.563em;
+    font-size: 1.563em;
 }
 h5 {
-	font-size: 1.25em;
+    font-size: 1.25em;
 }
 strong,
 b {
@@ -141,20 +141,45 @@ hr {
 }
 
 @media (max-width: 720px) {
-	body {
-        font-size: 17px;
+    body {
+        font-size: 15px; /* réduit encore la taille sur mobile */
     }
     main {
-        padding: 1em 0.5em;
+        padding: 0.5em 0.2em; /* réduit les espaces */
     }
     h1 {
-        font-size: 2em;
+        font-size: 1.4em;
+        margin-bottom: 0.5em;
     }
     h2 {
-        font-size: 1.5em;
+        font-size: 1.1em;
+        margin-bottom: 0.4em;
     }
     h3 {
-        font-size: 1.2em;
+        font-size: 1em;
+        margin-bottom: 0.3em;
+    }
+    h4, h5, h6 {
+        font-size: 0.95em;
+        margin-bottom: 0.2em;
+    }
+    p, .prose p {
+        margin-bottom: 1em;
+    }
+    .bg-white,
+    .rounded-xl,
+    .shadow,
+    .shadow-lg,
+    .shadow-2xl,
+    .rounded-2xl {
+        border-radius: 0.5em !important;
+        box-shadow: 0 1px 3px rgba(var(--gray), 0.08) !important;
+    }
+    .container,
+    .max-w-6xl,
+    .max-w-4xl {
+        padding-left: 0.2em !important;
+        padding-right: 0.2em !important;
     }
 }
 

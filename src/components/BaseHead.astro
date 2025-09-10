@@ -4,9 +4,9 @@
 import '../styles/global.css';
 
 interface Props {
-	title: string;
-	description: string;
-	image?: string;
+    title: string;
+    description: string;
+    image?: string;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -45,3 +45,33 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<!-- Responsive font and spacing for small devices -->
+<style>
+  html {
+    font-size: 15px;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  @media (max-width: 640px) {
+    html {
+      font-size: 13px;
+    }
+    body {
+      padding: 0.25rem !important;
+    }
+    h1, .prose h1 { font-size: 1.3rem !important; }
+    h2, .prose h2 { font-size: 1.1rem !important; }
+    h3, .prose h3 { font-size: 1rem !important; }
+    .prose, .prose * {
+      margin-top: 0.5em !important;
+      margin-bottom: 0.5em !important;
+    }
+    .container, .max-w-4xl, .max-w-6xl {
+      padding-left: 0.5rem !important;
+      padding-right: 0.5rem !important;
+    }
+  }
+</style>

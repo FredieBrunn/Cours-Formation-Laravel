@@ -5,32 +5,37 @@ pubDate: '2025-09-04'
 heroImage: '/laravel-routing.jpg'
 ---
 
+<!-- <div class="flex flex-col items-center text-center mb-4 sm:mb-8">
+  <span class="text-4xl sm:text-5xl mb-1 sm:mb-2">🛣️</span>
+  <h1 class="text-xl sm:text-3xl md:text-4xl font-extrabold text-blue-700 mb-1 sm:mb-2">Chapitre 4 : Configuration des Routes Laravel</h1>
+  <p class="text-gray-600 max-w-xl text-xs sm:text-base">Maîtrisez le système de routage Laravel : routes simples, paramètres, groupes, middleware et routes nommées.</p>
+</div> -->
+
 
 ## 🎯 Objectifs du chapitre
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-  <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-4">
-    <span class="text-2xl">🔗</span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-4 mb-4 sm:mb-6 text-xs sm:text-base">
+  <div class="flex items-center gap-2 sm:gap-3 bg-blue-50 rounded-lg p-2 sm:p-4">
+    <span class="text-xl sm:text-2xl">🔗</span>
     <span>Créer des routes simples et avancées</span>
   </div>
-  <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-4">
-    <span class="text-2xl">📦</span>
+  <div class="flex items-center gap-2 sm:gap-3 bg-blue-50 rounded-lg p-2 sm:p-4">
+    <span class="text-xl sm:text-2xl">📦</span>
     <span>Utiliser les paramètres de routes</span>
   </div>
-  <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-4">
-    <span class="text-2xl">🛡️</span>
+  <div class="flex items-center gap-2 sm:gap-3 bg-blue-50 rounded-lg p-2 sm:p-4">
+    <span class="text-xl sm:text-2xl">🛡️</span>
     <span>Appliquer des middleware aux routes</span>
   </div>
-  <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-4">
-    <span class="text-2xl">🏷️</span>
+  <div class="flex items-center gap-2 sm:gap-3 bg-blue-50 rounded-lg p-2 sm:p-4">
+    <span class="text-xl sm:text-2xl">🏷️</span>
     <span>Créer des routes nommées et générer des URLs dynamiques</span>
   </div>
-  <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-4">
-    <span class="text-2xl">🗂️</span>
+  <div class="flex items-center gap-2 sm:gap-3 bg-blue-50 rounded-lg p-2 sm:p-4">
+    <span class="text-xl sm:text-2xl">🗂️</span>
     <span>Organiser les routes avec des groupes</span>
   </div>
 </div>
-<br><br>
 
 ---
 
@@ -60,7 +65,6 @@ Route::post('/users', [UserController::class, 'store']);     // Créer
 Route::put('/users/{id}', [UserController::class, 'update']); // Modifier
 Route::delete('/users/{id}', [UserController::class, 'destroy']); // Supprimer
 ```
-<br><br>
 
 ---
 
@@ -85,7 +89,6 @@ Route::get('/users/{id}', [UserController::class, 'show'])
 Route::get('/users/{name}', [UserController::class, 'showByName'])
     ->where('name', '[A-Za-z]+'); // Seulement des lettres
 ```
-<br><br>
 
 ---
 
@@ -118,7 +121,6 @@ Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('users.
     <!-- Champs du formulaire -->
 </form>
 ```
-<br><br>
 
 ---
 
@@ -150,7 +152,6 @@ Route::resource('users', UserController::class)->only(['index', 'show', 'create'
 // Exclure certaines routes
 Route::resource('users', UserController::class)->except(['destroy']);
 ```
-<br><br>
 
 ---
 
@@ -178,7 +179,6 @@ Route::resource('users', UserController::class)->middleware('auth');
 - `guest` : Utilisateur non authentifié
 - `verified` : Email vérifié
 - `throttle` : Limitation du taux de requêtes
-<br><br>
 
 ---
 
@@ -222,7 +222,6 @@ Route::prefix('admin')
         Route::resource('/users', AdminUserController::class);
     });
 ```
-<br><br>
 
 ---
 
@@ -248,15 +247,14 @@ public function boot()
     Route::pattern('slug', '[a-z0-9-]+');
 }
 ```
-<br><br>
 
 ---
 
 ## 📝 Exercice pratique : Routes pour la gestion des utilisateurs
 
-<div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-4">
+<div class="bg-blue-50 border-l-4 border-blue-400 p-2 sm:p-4 mb-3 sm:mb-4 text-xs sm:text-base">
   <strong>Créer le contrôleur ressource :</strong>
-  <ol class="list-decimal ml-6">
+  <ol class="list-decimal ml-4 sm:ml-6">
     <li>
       <span class="text-blue-600">Créer le contrôleur ressource</span>
       <pre><code class="language-bash">php artisan make:controller UserController --resource</code></pre>
@@ -283,7 +281,6 @@ Route::get('/users/search/{term?}', [UserController::class, 'search'])->name('us
 
 // Route pour exporter les utilisateurs
 Route::get('/users-export', [UserController::class, 'export'])->name('users.export');
-
 ```
 
     </li>
@@ -397,68 +394,65 @@ class UserController extends Controller
 }
 ```
 
-</li>
+    </li>
   </ol>
 </div>
-<br><br>
 
 ---
 
 ## 🔍 Commandes utiles pour les routes
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-  <div class="bg-blue-50 border-l-4 border-blue-400 p-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-4 mb-4 sm:mb-6 text-xs sm:text-base">
+  <div class="bg-blue-50 border-l-4 border-blue-400 p-2 sm:p-4">
     <span class="font-bold">Voir toutes les routes</span><br>
     <code>php artisan route:list</code>
   </div>
-  <div class="bg-blue-50 border-l-4 border-blue-400 p-4">
+  <div class="bg-blue-50 border-l-4 border-blue-400 p-2 sm:p-4">
     <span class="font-bold">Filtrer les routes par nom</span><br>
     <code>php artisan route:list --name=users</code>
   </div>
-  <div class="bg-blue-50 border-l-4 border-blue-400 p-4">
+  <div class="bg-blue-50 border-l-4 border-blue-400 p-2 sm:p-4">
     <span class="font-bold">Voir les routes d'un contrôleur spécifique</span><br>
     <code>php artisan route:list --path=users</code>
   </div>
-  <div class="bg-blue-50 border-l-4 border-blue-400 p-4">
+  <div class="bg-blue-50 border-l-4 border-blue-400 p-2 sm:p-4">
     <span class="font-bold">Nettoyer le cache des routes</span><br>
     <code>php artisan route:clear</code>
   </div>
-  <div class="bg-blue-50 border-l-4 border-blue-400 p-4">
+  <div class="bg-blue-50 border-l-4 border-blue-400 p-2 sm:p-4">
     <span class="font-bold">Mettre en cache les routes (production)</span><br>
     <code>php artisan route:cache</code>
   </div>
 </div>
-<br><br>
 
 ---
 
 ## 🚨 Bonnes pratiques
 
-<div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
+<div class="bg-yellow-50 border-l-4 border-yellow-400 p-2 sm:p-4 mb-3 sm:mb-4 text-xs sm:text-base">
   <strong>Organisation des routes :</strong>
-  <ul class="list-disc ml-6">
+  <ul class="list-disc ml-4 sm:ml-6">
     <li>Groupez les routes liées</li>
     <li>Utilisez des noms de routes cohérents</li>
     <li>Appliquez les middleware appropriés</li>
   </ul>
 </div>
-<div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
+<div class="bg-yellow-50 border-l-4 border-yellow-400 p-2 sm:p-4 mb-3 sm:mb-4 text-xs sm:text-base">
   <strong>Sécurité :</strong>
-  <ul class="list-disc ml-6">
+  <ul class="list-disc ml-4 sm:ml-6">
     <li>Validez toujours les paramètres</li>
     <li>Utilisez le middleware CSRF pour les formulaires</li>
     <li>Protégez les routes sensibles</li>
   </ul>
 </div>
-<div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
+<div class="bg-yellow-50 border-l-4 border-yellow-400 p-2 sm:p-4 mb-3 sm:mb-4 text-xs sm:text-base">
   <strong>Performance :</strong>
-  <ul class="list-disc ml-6">
+  <ul class="list-disc ml-4 sm:ml-6">
     <li>Mettez en cache les routes en production</li>
     <li>Évitez les routes trop complexes</li>
     <li>Utilisez la liaison de modèle quand possible</li>
   </ul>
 </div>
-<br><br>
 
 ---
 
@@ -478,13 +472,12 @@ Route::get('/users/{user}', function (User $user) {
     return view('users.show', compact('user'));
 });
 ```
-<br><br>
 
 ---
 
 ## ✅ Checklist de fin de chapitre
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-2 mb-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-1 sm:gap-2 mb-4 sm:mb-6 text-xs sm:text-base">
   <div>✔️ Vous comprenez les différents types de routes</div>
   <div>✔️ Vous savez créer des routes avec paramètres</div>
   <div>✔️ Vous maîtrisez les routes nommées</div>
@@ -493,20 +486,14 @@ Route::get('/users/{user}', function (User $user) {
   <div>✔️ Vous avez créé le UserController complet</div>
   <div>✔️ Vous pouvez lister et filtrer les routes</div>
 </div>
-<br><br>
 
 ---
 
-<div class="flex flex-col md:flex-row justify-between items-center gap-4 mt-8">
-  <a href="/blog/chapter-3-project-structure" class="inline-flex items-center px-6 py-3 bg-gray-100 text-blue-700 rounded-lg shadow hover:bg-blue-50 transition font-semibold">
+<div class="flex flex-col md:flex-row justify-between items-center gap-2 sm:gap-4 mt-6 sm:mt-8">
+  <a href="/blog/chapter-3-project-structure" class="inline-flex items-center px-4 py-2 sm:px-6 sm:py-3 bg-gray-100 text-blue-700 rounded-lg shadow hover:bg-blue-50 transition font-semibold text-xs sm:text-base">
     ⬅️ Chapitre précédent
   </a>
-  <a href="/blog/chapter-5-user-management-setup" class="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition font-semibold">
+  <a href="/blog/chapter-5-user-management-setup" class="inline-flex items-center px-4 py-2 sm:px-6 sm:py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition font-semibold text-xs sm:text-base">
     Chapitre suivant ➡️
   </a>
 </div>
-<br><br>
-<!-- 
-<div class="text-center mt-8 text-gray-500 text-sm">
-  <strong>Formateur :</strong> Fredie TUEGUEM &nbsp;|&nbsp; <strong>Institution :</strong> UniTechs
-</div> -->

@@ -7,270 +7,141 @@ import { SITE_TITLE } from '../consts';
 
 <!doctype html>
 <html lang="fr">
-	<head>
-		<BaseHead title={`À propos - ${SITE_TITLE}`} description="Découvrez Fredie TUEGUEM, votre formateur Laravel 10 à UniTechs, et l'approche pédagogique de cette formation complète." />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<div class="about-hero mt-20 md:mt-24">
-				<img src="/assets/logo_md.png" alt="UniTechs Logo" class="logo-about" />
-				<h1>À propos de la formation</h1>
-			</div>
+    <head>
+        <BaseHead title={`À propos - ${SITE_TITLE}`} description="Découvrez Fredie TUEGUEM, votre formateur Laravel 10 à UniTechs, et l'approche pédagogique de cette formation complète." />
+    </head>
+    <body class="bg-gray-50 text-gray-800 font-sans antialiased">
+        <Header />
+        <main class="max-w-4xl mx-auto px-2 sm:px-6 py-4 sm:py-10">
+            <div class="about-hero mt-16 sm:mt-20 md:mt-24 rounded-xl p-4 sm:p-8 text-center bg-gradient-to-r from-blue-600 to-indigo-700 text-white mb-6 sm:mb-10">
+                <img src="/assets/logo_md.png" alt="UniTechs Logo" class="mx-auto w-20 sm:w-28 rounded-lg mb-2 sm:mb-4" />
+                <h1 class="text-lg sm:text-3xl font-extrabold mb-1 sm:mb-2">À propos de la formation</h1>
+            </div>
 
-			<div class="instructor-section">
-				<h2>👨‍💻 Votre formateur : Fredie TUEGUEM</h2>
-				<div class="instructor-content">
-					<div class="instructor-info">
-						<p>
-							<strong>Fredie TUEGUEM</strong> est un développeur web expérimenté et formateur passionné 
-							spécialisé dans les technologies Angular et Laravel. Fort de plusieurs années d'expérience 
-							dans le développement d'applications web, il partage ses connaissances à UniTechs pour 
-							former la nouvelle génération de développeurs. <a class="text-blue-600 hover:underline hover:scale-105" href="https://fredietueguem.vercel.app/">Portfolio</a>
-						</p>
-						
-						<!-- <h3>🎓 Expertise</h3>
-						<ul>
-							<li>Développement PHP/Laravel depuis plus de 5 ans</li>
-							<li>Spécialiste en architecture d'applications web</li>
-							<li>Expert en intégration TailwindCSS</li>
-							<li>Formateur certifié en développement web</li>
-							<li>Consultant en transformation digitale</li>
-						</ul> -->
-					</div>
-				</div>
-			</div>
+            <div class="instructor-section bg-white rounded-xl shadow p-3 sm:p-6 mb-6">
+                <h2 class="text-base sm:text-xl font-bold mb-2">👨‍💻 Votre formateur : Fredie TUEGUEM</h2>
+                <div class="instructor-content grid gap-2 sm:gap-4">
+                    <div class="instructor-info text-xs sm:text-base">
+                        <p>
+                            <strong>Fredie TUEGUEM</strong> est un développeur web expérimenté et formateur passionné 
+                            spécialisé dans les technologies Angular et Laravel. Fort de plusieurs années d'expérience 
+                            dans le développement d'applications web, il partage ses connaissances à UniTechs pour 
+                            former la nouvelle génération de développeurs. <a class="text-blue-600 hover:underline hover:scale-105" href="https://fredietueguem.vercel.app/">Portfolio</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-			<div class="unitechs-section">
-				<h2>🏢 UniTechs - Centre de formation</h2>
-				<p>
-					<strong>UniTechs</strong> est un centre de formation spécialisé dans les nouvelles technologies. 
-					Notre mission est de former des développeurs compétents et opérationnels, prêts à relever 
-					les défis du marché du travail actuel.
-				</p>
-				
-				<h3>🌟 Nos valeurs</h3>
-				<div class="values-grid">
-					<div class="value-card">
-						<h4>Excellence</h4>
-						<p>Formation de qualité avec les dernières technologies</p>
-					</div>
-					<div class="value-card">
-						<h4>Pratique</h4>
-						<p>Apprentissage par la pratique et projets concrets</p>
-					</div>
-					<div class="value-card">
-						<h4>Accompagnement</h4>
-						<p>Suivi personnalisé de chaque apprenant</p>
-					</div>
-					<div class="value-card">
-						<h4>Innovation</h4>
-						<p>Veille technologique et méthodes pédagogiques modernes</p>
-					</div>
-				</div>
-			</div>
+            <div class="unitechs-section bg-white rounded-xl shadow p-3 sm:p-6 mb-6">
+                <h2 class="text-base sm:text-xl font-bold mb-2">🏢 UniTechs - Centre de formation</h2>
+                <p class="text-xs sm:text-base">
+                    <strong>UniTechs</strong> est un centre de formation spécialisé dans les nouvelles technologies. 
+                    Notre mission est de former des développeurs compétents et opérationnels, prêts à relever 
+                    les défis du marché du travail actuel.
+                </p>
+                
+                <h3 class="text-sm sm:text-lg font-semibold mt-4 mb-2">🌟 Nos valeurs</h3>
+                <div class="values-grid grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 mt-2">
+                    <div class="value-card border-2 border-gray-200 rounded-lg p-2 sm:p-4 text-center hover:border-blue-600 transition">
+                        <h4 class="text-blue-700 font-bold mb-1 text-sm sm:text-base">Excellence</h4>
+                        <p class="text-xs sm:text-base">Formation de qualité avec les dernières technologies</p>
+                    </div>
+                    <div class="value-card border-2 border-gray-200 rounded-lg p-2 sm:p-4 text-center hover:border-blue-600 transition">
+                        <h4 class="text-blue-700 font-bold mb-1 text-sm sm:text-base">Pratique</h4>
+                        <p class="text-xs sm:text-base">Apprentissage par la pratique et projets concrets</p>
+                    </div>
+                    <div class="value-card border-2 border-gray-200 rounded-lg p-2 sm:p-4 text-center hover:border-blue-600 transition">
+                        <h4 class="text-blue-700 font-bold mb-1 text-sm sm:text-base">Accompagnement</h4>
+                        <p class="text-xs sm:text-base">Suivi personnalisé de chaque apprenant</p>
+                    </div>
+                    <div class="value-card border-2 border-gray-200 rounded-lg p-2 sm:p-4 text-center hover:border-blue-600 transition">
+                        <h4 class="text-blue-700 font-bold mb-1 text-sm sm:text-base">Innovation</h4>
+                        <p class="text-xs sm:text-base">Veille technologique et méthodes pédagogiques modernes</p>
+                    </div>
+                </div>
+            </div>
 
-			<div class="methodology-section">
-				<h2>📖 Méthodologie pédagogique</h2>
-				<div class="methodology-content">
-					<div class="method-item">
-						<h3>🎯 Approche progressive</h3>
-						<p>
-							Chaque concept est introduit de manière progressive, en partant des bases 
-							pour aller vers les notions plus avancées. Aucun prérequis avancé n'est nécessaire.
-						</p>
-					</div>
-					
-					<div class="method-item">
-						<h3>💻 Apprentissage pratique</h3>
-						<p>
-							Chaque chapitre comprend des exercices pratiques et des projets concrets. 
-							Vous développerez une vraie application de gestion des utilisateurs.
-						</p>
-					</div>
-					
-					<div class="method-item">
-						<h3>📝 Documentation complète</h3>
-						<p>
-							Toutes les étapes sont documentées avec des captures d'écran, du code 
-							commenté et des explications détaillées.
-						</p>
-					</div>
-					
-					<div class="method-item">
-						<h3>🔧 Outils professionnels</h3>
-						<p>
-							Utilisation des mêmes outils que les professionnels : VS Code, Laragon, 
-							Git, et les meilleures pratiques du secteur.
-						</p>
-					</div>
-				</div>
-			</div>
+            <div class="methodology-section bg-white rounded-xl shadow p-3 sm:p-6 mb-6">
+                <h2 class="text-base sm:text-xl font-bold mb-2">📖 Méthodologie pédagogique</h2>
+                <div class="methodology-content grid gap-2 sm:gap-4 mt-2">
+                    <div class="method-item border-l-4 border-blue-600 bg-blue-50 rounded-r-lg p-2 sm:p-4 mb-2">
+                        <h3 class="text-blue-700 font-semibold mb-1 text-sm sm:text-base">🎯 Approche progressive</h3>
+                        <p class="text-xs sm:text-base">
+                            Chaque concept est introduit de manière progressive, en partant des bases 
+                            pour aller vers les notions plus avancées. Aucun prérequis avancé n'est nécessaire.
+                        </p>
+                    </div>
+                    <div class="method-item border-l-4 border-blue-600 bg-blue-50 rounded-r-lg p-2 sm:p-4 mb-2">
+                        <h3 class="text-blue-700 font-semibold mb-1 text-sm sm:text-base">💻 Apprentissage pratique</h3>
+                        <p class="text-xs sm:text-base">
+                            Chaque chapitre comprend des exercices pratiques et des projets concrets. 
+                            Vous développerez une vraie application de gestion des utilisateurs.
+                        </p>
+                    </div>
+                    <div class="method-item border-l-4 border-blue-600 bg-blue-50 rounded-r-lg p-2 sm:p-4 mb-2">
+                        <h3 class="text-blue-700 font-semibold mb-1 text-sm sm:text-base">📝 Documentation complète</h3>
+                        <p class="text-xs sm:text-base">
+                            Toutes les étapes sont documentées avec des captures d'écran, du code 
+                            commenté et des explications détaillées.
+                        </p>
+                    </div>
+                    <div class="method-item border-l-4 border-blue-600 bg-blue-50 rounded-r-lg p-2 sm:p-4 mb-2">
+                        <h3 class="text-blue-700 font-semibold mb-1 text-sm sm:text-base">🔧 Outils professionnels</h3>
+                        <p class="text-xs sm:text-base">
+                            Utilisation des mêmes outils que les professionnels : VS Code, Laragon, 
+                            Git, et les meilleures pratiques du secteur.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-			<div class="course-benefits">
-				<h2>🎁 Ce que vous obtiendrez</h2>
-				<div class="benefits-list">
-					<div class="benefit-item">
-						<span class="benefit-icon">✅</span>
-						<div>
-							<h4>Compétences Laravel 10</h4>
-							<p>Maîtrise complète du framework le plus populaire de PHP</p>
-						</div>
-					</div>
-					<div class="benefit-item">
-						<span class="benefit-icon">✅</span>
-						<div>
-							<h4>Design moderne avec TailwindCSS</h4>
-							<p>Création d'interfaces utilisateur modernes et responsives</p>
-						</div>
-					</div>
-					<div class="benefit-item">
-						<span class="benefit-icon">✅</span>
-						<div>
-							<h4>Projet portfolio</h4>
-							<p>Application complète à ajouter à votre portfolio</p>
-						</div>
-					</div>
-					<div class="benefit-item">
-						<span class="benefit-icon">✅</span>
-						<div>
-							<h4>Bonnes pratiques</h4>
-							<p>Code propre, sécurisé et maintenable</p>
-						</div>
-					</div>
-				</div>
-			</div>
+            <div class="course-benefits bg-white rounded-xl shadow p-3 sm:p-6 mb-6">
+                <h2 class="text-base sm:text-xl font-bold mb-2">🎁 Ce que vous obtiendrez</h2>
+                <div class="benefits-list grid gap-2 sm:gap-4 mt-2">
+                    <div class="benefit-item flex items-start gap-2 sm:gap-4 bg-blue-50 border border-blue-100 rounded-lg p-2 sm:p-4">
+                        <span class="benefit-icon text-green-500 text-lg sm:text-2xl">✅</span>
+                        <div>
+                            <h4 class="text-blue-700 font-semibold mb-0.5 text-sm sm:text-base">Compétences Laravel 10</h4>
+                            <p class="text-xs sm:text-base">Maîtrise complète du framework le plus populaire de PHP</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item flex items-start gap-2 sm:gap-4 bg-blue-50 border border-blue-100 rounded-lg p-2 sm:p-4">
+                        <span class="benefit-icon text-green-500 text-lg sm:text-2xl">✅</span>
+                        <div>
+                            <h4 class="text-blue-700 font-semibold mb-0.5 text-sm sm:text-base">Design moderne avec TailwindCSS</h4>
+                            <p class="text-xs sm:text-base">Création d'interfaces utilisateur modernes et responsives</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item flex items-start gap-2 sm:gap-4 bg-blue-50 border border-blue-100 rounded-lg p-2 sm:p-4">
+                        <span class="benefit-icon text-green-500 text-lg sm:text-2xl">✅</span>
+                        <div>
+                            <h4 class="text-blue-700 font-semibold mb-0.5 text-sm sm:text-base">Projet portfolio</h4>
+                            <p class="text-xs sm:text-base">Application complète à ajouter à votre portfolio</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item flex items-start gap-2 sm:gap-4 bg-blue-50 border border-blue-100 rounded-lg p-2 sm:p-4">
+                        <span class="benefit-icon text-green-500 text-lg sm:text-2xl">✅</span>
+                        <div>
+                            <h4 class="text-blue-700 font-semibold mb-0.5 text-sm sm:text-base">Bonnes pratiques</h4>
+                            <p class="text-xs sm:text-base">Code propre, sécurisé et maintenable</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-			<div class="contact-section">
-				<h2>📞 Contact</h2>
-				<p>
-					Pour toute question concernant cette formation, n'hésitez pas à contacter 
-					<strong>UniTechs</strong> ou votre formateur <strong>Fredie TUEGUEM</strong>.
-				</p>
-				<div class="contact-info">
-					<p><strong>Centre de formation :</strong> UniTechs</p>
-					<p><strong>Formateur :</strong> Fredie TUEGUEM</p>
-					<p><strong>Spécialité :</strong> Développement Web</p>
-				</div>
-			</div>
-		</main>
-		<Footer />
-		
-		<style>
-			.about-hero {
-				text-align: center;
-				margin-bottom: 3rem;
-				padding: 2rem;
-				background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
-				border-radius: 12px;
-				color: white;
-			}
-			
-			.logo-about {
-				width: 100px;
-				height: auto;
-				margin-bottom: 1rem;
-				border-radius: 8px;
-			}
-			
-			.instructor-section, .unitechs-section, .methodology-section, .course-benefits, .contact-section {
-				margin-bottom: 3rem;
-				padding: 2rem;
-				background: white;
-				border-radius: 8px;
-				box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-			}
-			
-			.instructor-content {
-				display: grid;
-				gap: 2rem;
-				margin-top: 1.5rem;
-			}
-			
-			.values-grid {
-				display: grid;
-				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-				gap: 1.5rem;
-				margin-top: 2rem;
-			}
-			
-			.value-card {
-				padding: 1.5rem;
-				border: 2px solid #e2e8f0;
-				border-radius: 8px;
-				text-align: center;
-				transition: all 0.3s ease;
-			}
-			
-			.value-card:hover {
-				border-color: var(--accent);
-				transform: translateY(-2px);
-				box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-			}
-			
-			.value-card h4 {
-				color: var(--accent);
-				margin-bottom: 0.5rem;
-			}
-			
-			.methodology-content {
-				display: grid;
-				gap: 2rem;
-				margin-top: 2rem;
-			}
-			
-			.method-item {
-				padding: 1.5rem;
-				border-left: 4px solid var(--accent);
-				background: #f8fafc;
-				border-radius: 0 8px 8px 0;
-			}
-			
-			.method-item h3 {
-				color: var(--accent);
-				margin-bottom: 1rem;
-			}
-			
-			.benefits-list {
-				display: grid;
-				gap: 1.5rem;
-				margin-top: 2rem;
-			}
-			
-			.benefit-item {
-				display: flex;
-				align-items: flex-start;
-				gap: 1rem;
-				padding: 1rem;
-				border-radius: 8px;
-				background: #f0f9ff;
-				border: 1px solid #e0f2fe;
-			}
-			
-			.benefit-icon {
-				font-size: 1.5rem;
-				color: #10b981;
-				flex-shrink: 0;
-			}
-			
-			.benefit-item h4 {
-				margin-bottom: 0.5rem;
-				color: var(--accent);
-			}
-			
-			.contact-info {
-				margin-top: 1.5rem;
-				padding: 1.5rem;
-				background: #f8fafc;
-				border-radius: 8px;
-				border-left: 4px solid var(--accent);
-			}
-			
-			@media (max-width: 720px) {
-				.values-grid {
-					grid-template-columns: 1fr;
-				}
-			}
-		</style>
-	</body>
+            <div class="contact-section bg-white rounded-xl shadow p-3 sm:p-6 mb-6">
+                <h2 class="text-base sm:text-xl font-bold mb-2">📞 Contact</h2>
+                <p class="text-xs sm:text-base">
+                    Pour toute question concernant cette formation, n'hésitez pas à contacter 
+                    <strong>UniTechs</strong> ou votre formateur <strong>Fredie TUEGUEM</strong>.
+                </p>
+                <div class="contact-info mt-2 p-2 sm:p-4 bg-blue-50 border-l-4 border-blue-600 rounded">
+                    <p class="text-xs sm:text-base"><strong>Centre de formation :</strong> UniTechs</p>
+                    <p class="text-xs sm:text-base"><strong>Formateur :</strong> Fredie TUEGUEM</p>
+                    <p class="text-xs sm:text-base"><strong>Spécialité :</strong> Développement Web</p>
+                </div>
+            </div>
+        </main>
+        <Footer />
+    </body>
 </html>

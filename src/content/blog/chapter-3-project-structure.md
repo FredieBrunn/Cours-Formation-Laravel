@@ -5,63 +5,62 @@ pubDate: '2025-09-04'
 heroImage: "/structure-projet.jpg"
 ---
 
-
 ## 🎯 Objectifs du chapitre
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-  <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-4">
-    <span class="text-2xl">🗂️</span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-4 mb-4 sm:mb-6 text-xs sm:text-base">
+  <div class="flex items-center gap-2 sm:gap-3 bg-blue-50 rounded-lg p-2 sm:p-4">
+    <span class="text-xl sm:text-2xl">🗂️</span>
     <span>Naviguer dans la structure Laravel</span>
   </div>
-  <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-4">
-    <span class="text-2xl">📄</span>
+  <div class="flex items-center gap-2 sm:gap-3 bg-blue-50 rounded-lg p-2 sm:p-4">
+    <span class="text-xl sm:text-2xl">📄</span>
     <span>Identifier les fichiers importants</span>
   </div>
-  <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-4">
-    <span class="text-2xl">🏛️</span>
+  <div class="flex items-center gap-2 sm:gap-3 bg-blue-50 rounded-lg p-2 sm:p-4">
+    <span class="text-xl sm:text-2xl">🏛️</span>
     <span>Comprendre l’architecture MVC</span>
   </div>
-  <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-4">
-    <span class="text-2xl">📝</span>
+  <div class="flex items-center gap-2 sm:gap-3 bg-blue-50 rounded-lg p-2 sm:p-4">
+    <span class="text-xl sm:text-2xl">📝</span>
     <span>Utiliser les conventions de nommage</span>
   </div>
-  <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-4">
-    <span class="text-2xl">📦</span>
+  <div class="flex items-center gap-2 sm:gap-3 bg-blue-50 rounded-lg p-2 sm:p-4">
+    <span class="text-xl sm:text-2xl">📦</span>
     <span>Organiser votre code efficacement</span>
   </div>
 </div>
-<br><br>
+<br class="hidden sm:block"><br class="hidden sm:block">
 
 ---
 
 ## 🏗️ Architecture MVC de Laravel
 
-<div class="bg-white rounded-xl shadow p-6 mb-6">
-  <p class="mb-4">Laravel suit le pattern <strong>MVC (Model-View-Controller)</strong> :</p>
-  <ul class="list-none pl-0 mb-4">
+<div class="bg-white rounded-xl shadow p-3 sm:p-6 mb-4 sm:mb-6 text-xs sm:text-base">
+  <p class="mb-2 sm:mb-4">Laravel suit le pattern <strong>MVC (Model-View-Controller)</strong> :</p>
+  <ul class="list-none pl-0 mb-2 sm:mb-4">
     <li><span class="font-bold text-blue-600">Model</span> : Gère les données et la logique métier</li>
     <li><span class="font-bold text-blue-600">View</span> : Interface utilisateur (ce que voit l'utilisateur)</li>
     <li><span class="font-bold text-blue-600">Controller</span> : Logique de contrôle (fait le lien entre Model et View)</li>
   </ul>
   <div class="flex justify-center">
-    <pre class="bg-blue-50 rounded-lg p-4 text-sm overflow-x-auto">
+    <pre class="bg-blue-50 rounded-lg p-2 sm:p-4 text-xs overflow-x-auto mb-0">
 Utilisateur → Route → Controller → Model → Database
                 ↓
             View ← Controller ← Model
     </pre>
   </div>
 </div>
-<br><br>
+<br class="hidden sm:block"><br class="hidden sm:block">
 
 ---
 
 ## 📂 Structure détaillée du projet
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 mb-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-12 mb-6 sm:mb-8 text-xs sm:text-base">
 
 <div>
-  <h3 class="text-blue-700 font-semibold mb-2 flex items-center gap-2">🧩 Dossier <code>app/</code></h3>
-  <pre class="bg-gray-50 rounded-lg p-4 text-xs overflow-x-auto mb-2">
+  <h3 class="text-blue-700 font-semibold mb-1 sm:mb-2 flex items-center gap-1 sm:gap-2">🧩 Dossier <code>app/</code></h3>
+  <pre class="bg-gray-50 rounded-lg p-2 sm:p-4 text-xs overflow-x-auto mb-1 sm:mb-2">
 app/
 ├── Console/           # Commandes Artisan personnalisées
 ├── Exceptions/        # Gestion des exceptions
@@ -73,7 +72,7 @@ app/
 ├── Providers/        # Fournisseurs de services
 └── Services/         # Services métier (optionnel)
   </pre>
-  <ul class="text-sm text-gray-700 mb-4">
+  <ul class="text-xs sm:text-sm text-gray-700 mb-2 sm:mb-4">
     <li>📄 <code>app/Models/User.php</code> – Modèle utilisateur par défaut</li>
     <li>📄 <code>app/Http/Controllers/Controller.php</code> – Contrôleur de base</li>
     <li>📄 <code>app/Http/Kernel.php</code> – Configuration des middleware</li>
@@ -81,8 +80,8 @@ app/
 </div>
 
 <div>
-  <h3 class="text-blue-700 font-semibold mb-2 flex items-center gap-2">⚡ Dossier <code>bootstrap/</code></h3>
-  <pre class="bg-gray-50 rounded-lg p-4 text-xs overflow-x-auto mb-2">
+  <h3 class="text-blue-700 font-semibold mb-1 sm:mb-2 flex items-center gap-1 sm:gap-2">⚡ Dossier <code>bootstrap/</code></h3>
+  <pre class="bg-gray-50 rounded-lg p-2 sm:p-4 text-xs overflow-x-auto mb-1 sm:mb-2">
 bootstrap/
 ├── app.php          # Initialisation de l'application
 └── cache/           # Cache de démarrage
@@ -90,8 +89,8 @@ bootstrap/
 </div>
 
 <div>
-  <h3 class="text-blue-700 font-semibold mb-2 flex items-center gap-2">⚙️ Dossier <code>config/</code></h3>
-  <pre class="bg-gray-50 rounded-lg p-4 text-xs overflow-x-auto mb-2">
+  <h3 class="text-blue-700 font-semibold mb-1 sm:mb-2 flex items-center gap-1 sm:gap-2">⚙️ Dossier <code>config/</code></h3>
+  <pre class="bg-gray-50 rounded-lg p-2 sm:p-4 text-xs overflow-x-auto mb-1 sm:mb-2">
 config/
 ├── app.php          # Configuration principale
 ├── database.php     # Configuration base de données
@@ -99,7 +98,7 @@ config/
 ├── queue.php        # Configuration des files d'attente
 └── ...
   </pre>
-  <ul class="text-sm text-gray-700 mb-4">
+  <ul class="text-xs sm:text-sm text-gray-700 mb-2 sm:mb-4">
     <li>📄 <code>config/app.php</code> – Timezone, locale, providers</li>
     <li>📄 <code>config/database.php</code> – Connexions base de données</li>
     <li>📄 <code>config/filesystems.php</code> – Stockage des fichiers</li>
@@ -107,23 +106,23 @@ config/
 </div>
 
 <div>
-  <h3 class="text-blue-700 font-semibold mb-2 flex items-center gap-2">🗄️ Dossier <code>database/</code></h3>
-  <pre class="bg-gray-50 rounded-lg p-4 text-xs overflow-x-auto mb-2">
+  <h3 class="text-blue-700 font-semibold mb-1 sm:mb-2 flex items-center gap-1 sm:gap-2">🗄️ Dossier <code>database/</code></h3>
+  <pre class="bg-gray-50 rounded-lg p-2 sm:p-4 text-xs overflow-x-auto mb-1 sm:mb-2">
 database/
 ├── factories/       # Factories pour les tests
 ├── migrations/      # Migrations de base de données
 ├── seeders/        # Seeders (données de test)
 └── database.sqlite # Base SQLite (optionnel)
   </pre>
-  <ul class="text-sm text-gray-700 mb-4">
+  <ul class="text-xs sm:text-sm text-gray-700 mb-2 sm:mb-4">
     <li>📄 <code>database/migrations/</code> – Évolution de la structure BDD</li>
     <li>📄 <code>database/seeders/DatabaseSeeder.php</code> – Données initiales</li>
   </ul>
 </div>
 
 <div>
-  <h3 class="text-blue-700 font-semibold mb-2 flex items-center gap-2">🌐 Dossier <code>public/</code></h3>
-  <pre class="bg-gray-50 rounded-lg p-4 text-xs overflow-x-auto mb-2">
+  <h3 class="text-blue-700 font-semibold mb-1 sm:mb-2 flex items-center gap-1 sm:gap-2">🌐 Dossier <code>public/</code></h3>
+  <pre class="bg-gray-50 rounded-lg p-2 sm:p-4 text-xs overflow-x-auto mb-1 sm:mb-2">
 public/
 ├── index.php        # Point d'entrée principal
 ├── .htaccess       # Configuration Apache
@@ -134,8 +133,8 @@ public/
 </div>
 
 <div>
-  <h3 class="text-blue-700 font-semibold mb-2 flex items-center gap-2">🎨 Dossier <code>resources/</code></h3>
-  <pre class="bg-gray-50 rounded-lg p-4 text-xs overflow-x-auto mb-2">
+  <h3 class="text-blue-700 font-semibold mb-1 sm:mb-2 flex items-center gap-1 sm:gap-2">🎨 Dossier <code>resources/</code></h3>
+  <pre class="bg-gray-50 rounded-lg p-2 sm:p-4 text-xs overflow-x-auto mb-1 sm:mb-2">
 resources/
 ├── css/            # Fichiers CSS sources
 ├── js/             # Fichiers JavaScript sources
@@ -148,8 +147,8 @@ resources/
 </div>
 
 <div>
-  <h3 class="text-blue-700 font-semibold mb-2 flex items-center gap-2">🛣️ Dossier <code>routes/</code></h3>
-  <pre class="bg-gray-50 rounded-lg p-4 text-xs overflow-x-auto mb-2">
+  <h3 class="text-blue-700 font-semibold mb-1 sm:mb-2 flex items-center gap-1 sm:gap-2">🛣️ Dossier <code>routes/</code></h3>
+  <pre class="bg-gray-50 rounded-lg p-2 sm:p-4 text-xs overflow-x-auto mb-1 sm:mb-2">
 routes/
 ├── web.php         # Routes web (avec sessions)
 ├── api.php         # Routes API (stateless)
@@ -159,8 +158,8 @@ routes/
 </div>
 
 <div>
-  <h3 class="text-blue-700 font-semibold mb-2 flex items-center gap-2">💾 Dossier <code>storage/</code></h3>
-  <pre class="bg-gray-50 rounded-lg p-4 text-xs overflow-x-auto mb-2">
+  <h3 class="text-blue-700 font-semibold mb-1 sm:mb-2 flex items-center gap-1 sm:gap-2">💾 Dossier <code>storage/</code></h3>
+  <pre class="bg-gray-50 rounded-lg p-2 sm:p-4 text-xs overflow-x-auto mb-1 sm:mb-2">
 storage/
 ├── app/            # Fichiers de l'application
 ├── framework/      # Cache, sessions, vues
@@ -169,8 +168,8 @@ storage/
 </div>
 
 <div>
-  <h3 class="text-blue-700 font-semibold mb-2 flex items-center gap-2">🧪 Dossier <code>tests/</code></h3>
-  <pre class="bg-gray-50 rounded-lg p-4 text-xs overflow-x-auto mb-2">
+  <h3 class="text-blue-700 font-semibold mb-1 sm:mb-2 flex items-center gap-1 sm:gap-2">🧪 Dossier <code>tests/</code></h3>
+  <pre class="bg-gray-50 rounded-lg p-2 sm:p-4 text-xs overflow-x-auto mb-1 sm:mb-2">
 tests/
 ├── Feature/        # Tests d'intégration
 └── Unit/          # Tests unitaires
@@ -178,7 +177,7 @@ tests/
 </div>
 
 </div>
-<br><br>
+<br class="hidden sm:block"><br class="hidden sm:block">
 
 ---
 
@@ -208,7 +207,7 @@ MAIL_HOST=mailhog
 MAIL_PORT=1025
 ```
 
-<br><br>
+<br class="hidden sm:block"><br class="hidden sm:block">
 
 ### 2. <span class="text-blue-600">composer.json</span> – Dépendances PHP
 
@@ -236,7 +235,7 @@ MAIL_PORT=1025
 }
 ```
 
-<br><br>
+<br class="hidden sm:block"><br class="hidden sm:block">
 
 ### 3. <span class="text-blue-600">package.json</span> – Dépendances NPM
 
@@ -259,7 +258,7 @@ MAIL_PORT=1025
     }
 }
 ```
-<br><br>
+<br class="hidden sm:block"><br class="hidden sm:block">
 
 ---
 
@@ -283,43 +282,43 @@ resources/views/
 │   └── show.blade.php     # Détails utilisateur
 └── welcome.blade.php      # Page d'accueil
 ```
-<br><br>
+<br class="hidden sm:block"><br class="hidden sm:block">
 
 ---
 
 ## 🗂️ Conventions de nommage Laravel
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8 text-xs sm:text-base">
   <div>
-    <h4 class="font-semibold text-blue-700 mb-1">📦 Modèles</h4>
-    <ul class="text-sm text-gray-700 mb-2">
+    <h4 class="font-semibold text-blue-700 mb-1 sm:mb-1.5">📦 Modèles</h4>
+    <ul class="text-xs sm:text-sm text-gray-700 mb-1 sm:mb-2">
       <li>Nom : Singulier, PascalCase (ex : <code>User</code>, <code>BlogPost</code>)</li>
       <li>Fichier : <code>app/Models/User.php</code></li>
     </ul>
-    <h4 class="font-semibold text-blue-700 mb-1">🧑‍💻 Contrôleurs</h4>
-    <ul class="text-sm text-gray-700 mb-2">
+    <h4 class="font-semibold text-blue-700 mb-1 sm:mb-1.5">🧑‍💻 Contrôleurs</h4>
+    <ul class="text-xs sm:text-sm text-gray-700 mb-1 sm:mb-2">
       <li>Nom : Singulier + "Controller" (ex : <code>UserController</code>)</li>
       <li>Fichier : <code>app/Http/Controllers/UserController.php</code></li>
     </ul>
-    <h4 class="font-semibold text-blue-700 mb-1">🗃️ Migrations</h4>
-    <ul class="text-sm text-gray-700 mb-2">
+    <h4 class="font-semibold text-blue-700 mb-1 sm:mb-1.5">🗃️ Migrations</h4>
+    <ul class="text-xs sm:text-sm text-gray-700 mb-1 sm:mb-2">
       <li>Nom : Action + table (ex : <code>create_users_table</code>)</li>
       <li>Fichier : <code>database/migrations/2024_01_01_000000_create_users_table.php</code></li>
     </ul>
   </div>
   <div>
-    <h4 class="font-semibold text-blue-700 mb-1">🛣️ Routes</h4>
-    <ul class="text-sm text-gray-700 mb-2">
+    <h4 class="font-semibold text-blue-700 mb-1 sm:mb-1.5">🛣️ Routes</h4>
+    <ul class="text-xs sm:text-sm text-gray-700 mb-1 sm:mb-2">
       <li>Nom : Kebab-case (ex : <code>/users</code>, <code>/blog-posts</code>)</li>
     </ul>
-    <h4 class="font-semibold text-blue-700 mb-1">🖼️ Vues</h4>
-    <ul class="text-sm text-gray-700 mb-2">
+    <h4 class="font-semibold text-blue-700 mb-1 sm:mb-1.5">🖼️ Vues</h4>
+    <ul class="text-xs sm:text-sm text-gray-700 mb-1 sm:mb-2">
       <li>Nom : Kebab-case (ex : <code>users.index</code>)</li>
       <li>Fichier : <code>resources/views/users/index.blade.php</code></li>
     </ul>
   </div>
 </div>
-<br><br>
+<br class="hidden sm:block"><br class="hidden sm:block">
 
 ---
 
@@ -335,7 +334,7 @@ resources/views/
 'fallback_locale' => 'en',
 ```
 
-<br><br>
+<br class="hidden sm:block"><br class="hidden sm:block">
 
 ### 2. <span class="text-blue-600">Fournisseur de services personnalisé</span>
 
@@ -343,22 +342,22 @@ resources/views/
 php artisan make:provider CustomServiceProvider
 ```
 
-<br><br>
+<br class="hidden sm:block"><br class="hidden sm:block">
 
 ### 3. <span class="text-blue-600">Middleware personnalisé</span>
 
 ```bash
 php artisan make:middleware CheckAge
 ```
-<br><br>
+<br class="hidden sm:block"><br class="hidden sm:block">
 
 ---
 
 ## 📝 Exercice pratique
 
-<div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-4">
+<div class="bg-blue-50 border-l-4 border-blue-400 p-2 sm:p-4 mb-2 sm:mb-4 text-xs sm:text-base">
   <strong>Créer la structure pour la gestion des utilisateurs :</strong>
-  <ol class="list-decimal ml-6">
+  <ol class="list-decimal ml-4 sm:ml-6">
     <li>Créer le contrôleur :
       <pre><code class="language-bash">php artisan make:controller UserController --resource</code></pre>
     </li>
@@ -369,7 +368,7 @@ php artisan make:middleware CheckAge
       <pre><code class="language-bash">mkdir resources/views/users</code></pre>
     </li>
     <li>Créer les fichiers de vues :
-      <ul class="list-disc ml-6">
+      <ul class="list-disc ml-4 sm:ml-6">
         <li>resources/views/users/index.blade.php</li>
         <li>resources/views/users/create.blade.php</li>
         <li>resources/views/users/edit.blade.php</li>
@@ -378,46 +377,46 @@ php artisan make:middleware CheckAge
     </li>
   </ol>
 </div>
-<br><br>
+<br class="hidden sm:block"><br class="hidden sm:block">
 
 ---
 
 ## 🚨 Bonnes pratiques
 
-<div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
+<div class="bg-yellow-50 border-l-4 border-yellow-400 p-2 sm:p-4 mb-2 sm:mb-4 text-xs sm:text-base">
   <strong>Organisation du code :</strong>
-  <ul class="list-disc ml-6">
+  <ul class="list-disc ml-4 sm:ml-6">
     <li>Respectez les conventions de nommage</li>
     <li>Groupez les fonctionnalités par dossiers</li>
     <li>Utilisez des namespaces appropriés</li>
     <li>Documentez votre code</li>
   </ul>
 </div>
-<div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
+<div class="bg-yellow-50 border-l-4 border-yellow-400 p-2 sm:p-4 mb-2 sm:mb-4 text-xs sm:text-base">
   <strong>Sécurité :</strong>
-  <ul class="list-disc ml-6">
+  <ul class="list-disc ml-4 sm:ml-6">
     <li>Ne commitez jamais le fichier <code>.env</code></li>
     <li>Utilisez les validations Laravel</li>
     <li>Protégez vos routes sensibles</li>
     <li>Échappez les données utilisateur</li>
   </ul>
 </div>
-<div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
+<div class="bg-yellow-50 border-l-4 border-yellow-400 p-2 sm:p-4 mb-2 sm:mb-4 text-xs sm:text-base">
   <strong>Performance :</strong>
-  <ul class="list-disc ml-6">
+  <ul class="list-disc ml-4 sm:ml-6">
     <li>Utilisez le cache quand approprié</li>
     <li>Optimisez vos requêtes de base de données</li>
     <li>Minimisez les assets CSS/JS</li>
     <li>Utilisez les relations Eloquent efficacement</li>
   </ul>
 </div>
-<br><br>
+<br class="hidden sm:block"><br class="hidden sm:block">
 
 ---
 
 ## ✅ Checklist de fin de chapitre
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-2 mb-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-1 sm:gap-2 mb-4 sm:mb-6 text-xs sm:text-base">
   <div>✔️ Vous comprenez la structure MVC</div>
   <div>✔️ Vous savez naviguer dans les dossiers Laravel</div>
   <div>✔️ Vous connaissez les fichiers de configuration importants</div>
@@ -425,15 +424,15 @@ php artisan make:middleware CheckAge
   <div>✔️ Vous avez créé la structure pour les utilisateurs</div>
   <div>✔️ Vous avez exploré le projet avec VS Code</div>
 </div>
-<br><br>
+<br class="hidden sm:block"><br class="hidden sm:block">
 
 ---
 
-<div class="flex flex-col md:flex-row justify-between items-center gap-4 mt-8">
-  <a href="/blog/chapter-2-installation" class="inline-flex items-center px-6 py-3 bg-gray-100 text-blue-700 rounded-lg shadow hover:bg-blue-50 transition font-semibold">
+<div class="flex flex-col md:flex-row justify-between items-center gap-2 sm:gap-4 mt-4 sm:mt-8">
+  <a href="/blog/chapter-2-installation" class="inline-flex items-center px-4 py-2 sm:px-6 sm:py-3 bg-gray-100 text-blue-700 rounded-lg shadow hover:bg-blue-50 transition font-semibold text-xs sm:text-base">
     ⬅️ Chapitre précédent
   </a>
-  <a href="/blog/chapter-4-routes-basics" class="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition font-semibold">
+  <a href="/blog/chapter-4-routes-basics" class="inline-flex items-center px-4 py-2 sm:px-6 sm:py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition font-semibold text-xs sm:text-base">
     Chapitre suivant ➡️
   </a>
 </div>

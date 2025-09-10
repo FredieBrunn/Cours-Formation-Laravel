@@ -8,25 +8,25 @@ heroImage: '/user-man.jpg'
 
 ## 🎯 Objectifs du chapitre
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-  <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-4">
-    <span class="text-2xl">🗄️</span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-4 mb-4 sm:mb-6 text-xs sm:text-base">
+  <div class="flex items-center gap-2 sm:gap-3 bg-blue-50 rounded-lg p-2 sm:p-4">
+    <span class="text-xl sm:text-2xl">🗄️</span>
     <span>Configurer la base de données pour les utilisateurs</span>
   </div>
-  <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-4">
-    <span class="text-2xl">📝</span>
+  <div class="flex items-center gap-2 sm:gap-3 bg-blue-50 rounded-lg p-2 sm:p-4">
+    <span class="text-xl sm:text-2xl">📝</span>
     <span>Créer et personnaliser les migrations</span>
   </div>
-  <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-4">
-    <span class="text-2xl">👤</span>
+  <div class="flex items-center gap-2 sm:gap-3 bg-blue-50 rounded-lg p-2 sm:p-4">
+    <span class="text-xl sm:text-2xl">👤</span>
     <span>Configurer le modèle User</span>
   </div>
-  <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-4">
-    <span class="text-2xl">🌱</span>
+  <div class="flex items-center gap-2 sm:gap-3 bg-blue-50 rounded-lg p-2 sm:p-4">
+    <span class="text-xl sm:text-2xl">🌱</span>
     <span>Ajouter des données de test avec les seeders</span>
   </div>
-  <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-4">
-    <span class="text-2xl">✅</span>
+  <div class="flex items-center gap-2 sm:gap-3 bg-blue-50 rounded-lg p-2 sm:p-4">
+    <span class="text-xl sm:text-2xl">✅</span>
     <span>Préparer la validation des données</span>
   </div>
 </div>
@@ -38,7 +38,7 @@ heroImage: '/user-man.jpg'
 
 ### Vérification de la connexion
 
-<div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-4">
+<div class="bg-blue-50 border-l-4 border-blue-400 p-2 sm:p-4 mb-4 text-xs sm:text-base">
   <span class="font-bold">Tester la connexion dans <code>tinker</code> :</span>
   <pre><code class="language-bash">php artisan tinker</code></pre>
   <pre><code class="language-php">// Dans tinker
@@ -561,18 +561,18 @@ exit
 
 ## 🚨 Bonnes pratiques
 
-<div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
+<div class="bg-yellow-50 border-l-4 border-yellow-400 p-2 sm:p-4 mb-4 text-xs sm:text-base">
   <strong>Organisation :</strong>
-  <ul class="list-disc ml-6">
+  <ul class="list-disc ml-4 sm:ml-6">
     <li>Utilisez les migrations pour toute modification de structure</li>
     <li>Centralisez la logique métier dans les modèles</li>
     <li>Utilisez les factories et seeders pour vos tests</li>
     <li>Validez toujours les données côté serveur</li>
   </ul>
 </div>
-<div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
+<div class="bg-yellow-50 border-l-4 border-yellow-400 p-2 sm:p-4 mb-4 text-xs sm:text-base">
   <strong>Sécurité :</strong>
-  <ul class="list-disc ml-6">
+  <ul class="list-disc ml-4 sm:ml-6">
     <li>Ne stockez jamais de mots de passe en clair</li>
     <li>Protégez les routes sensibles avec des middleware</li>
     <li>Vérifiez les droits d'accès dans vos policies</li>
@@ -584,7 +584,7 @@ exit
 
 ## ✅ Checklist de fin de chapitre
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-2 mb-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-1 sm:gap-2 mb-4 sm:mb-6 text-xs sm:text-base">
   <div>✔️ Migration des utilisateurs enrichie et exécutée</div>
   <div>✔️ Modèle User personnalisé avec accesseurs/mutateurs</div>
   <div>✔️ Seeders créés et exécutés</div>
@@ -597,11 +597,11 @@ exit
 
 ---
 
-<div class="flex flex-col md:flex-row justify-between items-center gap-4 mt-8">
-  <a href="/blog/chapter-4-routes-basics" class="inline-flex items-center px-6 py-3 bg-gray-100 text-blue-700 rounded-lg shadow hover:bg-blue-50 transition font-semibold">
+<div class="flex flex-col md:flex-row justify-between items-center gap-2 sm:gap-4 mt-4 sm:mt-8">
+  <a href="/blog/chapter-4-routes-basics" class="inline-flex items-center px-4 py-2 sm:px-6 sm:py-3 bg-gray-100 text-blue-700 rounded-lg shadow hover:bg-blue-50 transition font-semibold text-xs sm:text-base">
     ⬅️ Chapitre précédent
   </a>
-  <a href="/blog/chapter-6-user-crud" class="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition font-semibold">
+  <a href="/blog/chapter-6-user-crud" class="inline-flex items-center px-4 py-2 sm:px-6 sm:py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition font-semibold text-xs sm:text-base">
     Chapitre suivant ➡️
   </a>
 </div>

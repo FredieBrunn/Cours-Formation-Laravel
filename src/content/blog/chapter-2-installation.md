@@ -5,40 +5,36 @@ pubDate: '2025-09-04'
 heroImage: '/installing-laravel.jpg'
 ---
 
-<div class="flex flex-col items-center text-center mb-8">
-  <span class="text-5xl mb-2">💻</span>
-  <h1 class="text-3xl md:text-4xl font-extrabold text-blue-700 mb-2">Chapitre 2 : Installation de Laravel 10 sur Windows</h1>
-  <p class="text-gray-600 max-w-xl">Guide complet pour installer Laravel 10 et créer votre premier projet sur Windows avec Composer.</p>
-</div>
-<br><br>
-
----
+<!-- <div class="flex flex-col items-center text-center mb-6 sm:mb-8">
+  <span class="text-4xl sm:text-5xl mb-1 sm:mb-2">💻</span>
+  <h1 class="text-xl sm:text-3xl md:text-4xl font-extrabold text-blue-700 mb-1 sm:mb-2">Chapitre 2 : Installation de Laravel 10 sur Windows</h1>
+  <p class="text-gray-600 max-w-xl text-xs sm:text-base">Guide complet pour installer Laravel 10 et créer votre premier projet sur Windows avec Composer.</p>
+</div>-->
 
 ## 🎯 Objectifs du chapitre
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-  <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-4">
-    <span class="text-2xl">⬇️</span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-4 mb-4 sm:mb-6 text-xs sm:text-base">
+  <div class="flex items-center gap-2 sm:gap-3 bg-blue-50 rounded-lg p-2 sm:p-4">
+    <span class="text-xl sm:text-2xl">⬇️</span>
     <span>Installer Laravel 10 via Composer</span>
   </div>
-  <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-4">
-    <span class="text-2xl">🛠️</span>
+  <div class="flex items-center gap-2 sm:gap-3 bg-blue-50 rounded-lg p-2 sm:p-4">
+    <span class="text-xl sm:text-2xl">🛠️</span>
     <span>Créer et configurer votre premier projet Laravel</span>
   </div>
-  <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-4">
-    <span class="text-2xl">🗄️</span>
+  <div class="flex items-center gap-2 sm:gap-3 bg-blue-50 rounded-lg p-2 sm:p-4">
+    <span class="text-xl sm:text-2xl">🗄️</span>
     <span>Configurer la base de données</span>
   </div>
-  <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-4">
-    <span class="text-2xl">🚀</span>
+  <div class="flex items-center gap-2 sm:gap-3 bg-blue-50 rounded-lg p-2 sm:p-4">
+    <span class="text-xl sm:text-2xl">🚀</span>
     <span>Lancer votre première application Laravel</span>
   </div>
-  <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-4">
-    <span class="text-2xl">📁</span>
+  <div class="flex items-center gap-2 sm:gap-3 bg-blue-50 rounded-lg p-2 sm:p-4">
+    <span class="text-xl sm:text-2xl">📁</span>
     <span>Comprendre la structure de base d’un projet Laravel</span>
   </div>
 </div>
-<br><br>
 
 ---
 
@@ -203,8 +199,8 @@ Cette commande va créer les tables de base :
 
 ## 📁 Fichiers importants à connaître
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-  <div class="bg-white rounded-xl shadow p-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-4 mb-4 sm:mb-6 text-xs sm:text-base">
+  <div class="bg-white rounded-xl shadow p-2 sm:p-4">
     <span class="font-bold text-blue-700">1. Routes (<code>routes/web.php</code>)</span>
 
 ```php
@@ -218,17 +214,17 @@ Route::get('/', function () {
 ```
 
   </div>
-  <div class="bg-white rounded-xl shadow p-4">
+  <div class="bg-white rounded-xl shadow p-2 sm:p-4">
     <span class="font-bold text-blue-700">2. Configuration principale (<code>config/app.php</code>)</span>
-    <p class="text-gray-700 text-sm">Contient les paramètres principaux de l'application.</p>
+    <p class="text-gray-700 text-xs sm:text-sm">Contient les paramètres principaux de l'application.</p>
   </div>
-  <div class="bg-white rounded-xl shadow p-4">
+  <div class="bg-white rounded-xl shadow p-2 sm:p-4">
     <span class="font-bold text-blue-700">3. Variables d'environnement (<code>.env</code>)</span>
-    <p class="text-gray-700 text-sm">Contient les configurations sensibles (base de données, clés API, etc.).</p>
+    <p class="text-gray-700 text-xs sm:text-sm">Contient les configurations sensibles (base de données, clés API, etc.).</p>
   </div>
-  <div class="bg-white rounded-xl shadow p-4">
+  <div class="bg-white rounded-xl shadow p-2 sm:p-4">
     <span class="font-bold text-blue-700">4. Artisan (<code>artisan</code>)</span>
-    <p class="text-gray-700 text-sm">Interface en ligne de commande de Laravel.</p>
+    <p class="text-gray-700 text-xs sm:text-sm">Interface en ligne de commande de Laravel.</p>
   </div>
 </div>
 <br><br>
@@ -296,36 +292,36 @@ APP_DEBUG=false # En production
 
 ## 🚨 Problèmes courants et solutions
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-  <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-4 mb-4 sm:mb-6 text-xs sm:text-base">
+  <div class="bg-yellow-50 border-l-4 border-yellow-400 p-2 sm:p-4">
     <span class="font-bold text-yellow-700">Erreur : "Class 'PDO' not found"</span>
-    <ul class="list-disc ml-6 text-gray-700">
+    <ul class="list-disc ml-4 sm:ml-6 text-gray-700">
       <li>Activez l'extension PDO dans PHP</li>
       <li>Ouvrez <code>php.ini</code></li>
       <li>Décommentez <code>extension=pdo_mysql</code></li>
       <li>Redémarrez Apache</li>
     </ul>
   </div>
-  <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4">
+  <div class="bg-yellow-50 border-l-4 border-yellow-400 p-2 sm:p-4">
     <span class="font-bold text-yellow-700">Erreur : "Permission denied"</span>
-    <ul class="list-disc ml-6 text-gray-700">
+    <ul class="list-disc ml-4 sm:ml-6 text-gray-700">
       <li>Donnez les permissions au dossier storage</li>
       <li>
         <code>chmod -R 775 storage bootstrap/cache</code>
       </li>
     </ul>
   </div>
-  <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4">
+  <div class="bg-yellow-50 border-l-4 border-yellow-400 p-2 sm:p-4">
     <span class="font-bold text-yellow-700">Erreur de connexion à la base de données</span>
-    <ul class="list-disc ml-6 text-gray-700">
+    <ul class="list-disc ml-4 sm:ml-6 text-gray-700">
       <li>MySQL est démarré dans Laragon</li>
       <li>Les paramètres dans <code>.env</code> sont corrects</li>
       <li>La base de données existe</li>
     </ul>
   </div>
-  <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4">
+  <div class="bg-yellow-50 border-l-4 border-yellow-400 p-2 sm:p-4">
     <span class="font-bold text-yellow-700">Port 8000 déjà utilisé</span>
-    <ul class="list-disc ml-6 text-gray-700">
+    <ul class="list-disc ml-4 sm:ml-6 text-gray-700">
       <li>Lancer sur un autre port :</li>
       <li>
         <code>php artisan serve --port=8080</code>
@@ -386,7 +382,7 @@ Route::get('/bonjour', function () {
 
 ## ✅ Checklist de fin de chapitre
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-2 mb-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-1 sm:gap-2 mb-4 sm:mb-6 text-xs sm:text-base">
   <div>✔️ Laravel 10 est installé</div>
   <div>✔️ Le projet "gestion-utilisateurs" est créé</div>
   <div>✔️ La base de données est configurée et connectée</div>
@@ -399,11 +395,11 @@ Route::get('/bonjour', function () {
 
 ---
 
-<div class="flex flex-col md:flex-row justify-between items-center gap-4 mt-8">
-  <a href="/blog/chapitre-1-prerequisites" class="inline-flex items-center px-6 py-3 bg-gray-100 text-blue-700 rounded-lg shadow hover:bg-blue-300 transition font-semibold">
+<div class="flex flex-col md:flex-row justify-between items-center gap-2 sm:gap-4 mt-6 sm:mt-8">
+  <a href="/blog/chapitre-1-prerequisites" class="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-gray-100 text-blue-700 rounded-lg shadow hover:bg-blue-300 transition font-semibold text-xs sm:text-base">
     ⬅️ Chapitre précédent
   </a>
-  <a href="/blog/chapter-3-project-structure" class="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition font-semibold">
+  <a href="/blog/chapter-3-project-structure" class="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition font-semibold text-xs sm:text-base">
     Chapitre suivant ➡️
   </a>
 </div>

@@ -8,21 +8,21 @@ heroImage: '/laravel-crud.webp'
 
 ## 🎯 Objectifs du chapitre
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-  <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-4">
-    <span class="text-2xl">📝</span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-4 mb-4 sm:mb-6 text-xs sm:text-base">
+  <div class="flex items-center gap-2 sm:gap-3 bg-blue-50 rounded-lg p-2 sm:p-4">
+    <span class="text-xl sm:text-2xl">📝</span>
     <span>Créer une interface complète de gestion des utilisateurs</span>
   </div>
-  <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-4">
-    <span class="text-2xl">🔄</span>
+  <div class="flex items-center gap-2 sm:gap-3 bg-blue-50 rounded-lg p-2 sm:p-4">
+    <span class="text-xl sm:text-2xl">🔄</span>
     <span>Implémenter toutes les fonctionnalités CRUD</span>
   </div>
-  <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-4">
-    <span class="text-2xl">🔍</span>
+  <div class="flex items-center gap-2 sm:gap-3 bg-blue-50 rounded-lg p-2 sm:p-4">
+    <span class="text-xl sm:text-2xl">🔍</span>
     <span>Ajouter la recherche et le filtrage</span>
   </div>
-  <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-4">
-    <span class="text-2xl">📑</span>
+  <div class="flex items-center gap-2 sm:gap-3 bg-blue-50 rounded-lg p-2 sm:p-4">
+    <span class="text-xl sm:text-2xl">📑</span>
     <span>Gérer la pagination et les messages de succès/erreur</span>
   </div>
 </div>
@@ -572,7 +572,7 @@ Route::patch('/users/{user}/toggle-status', [UserController::class, 'toggleStatu
 
 ## ✅ Checklist de fin de chapitre
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-2 mb-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-1 sm:gap-2 mb-4 sm:mb-6 text-xs sm:text-base">
   <div>✔️ Contrôleur UserController complet avec toutes les méthodes CRUD</div>
   <div>✔️ Layout principal créé avec navigation</div>
   <div>✔️ Vue index avec tableau, filtres et pagination</div>
@@ -582,15 +582,14 @@ Route::patch('/users/{user}/toggle-status', [UserController::class, 'toggleStatu
   <div>✔️ Gestion des fichiers (avatars)</div>
   <div>✔️ Lien symbolique pour le stockage créé</div>
 </div>
-<br><br>
 
 ---
 
-<div class="flex flex-col md:flex-row justify-between items-center gap-4 mt-8">
-  <a href="/blog/chapter-5-user-management-setup" class="inline-flex items-center px-6 py-3 bg-gray-100 text-blue-700 rounded-lg shadow hover:bg-blue-50 transition font-semibold">
+<div class="flex flex-col md:flex-row justify-between items-center gap-2 sm:gap-4 mt-4 sm:mt-8">
+  <a href="/blog/chapter-5-user-management-setup" class="inline-flex items-center px-3 py-2 sm:px-6 sm:py-3 bg-gray-100 text-blue-700 rounded-lg shadow hover:bg-blue-50 transition font-semibold text-xs sm:text-base">
     ⬅️ Chapitre précédent
   </a>
-  <a href="/blog/chapter-7-tailwindcss-integration" class="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition font-semibold">
+  <a href="/blog/chapter-7-tailwindcss-integration" class="inline-flex items-center px-3 py-2 sm:px-6 sm:py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition font-semibold text-xs sm:text-base">
     Chapitre suivant ➡️
   </a>
 </div>

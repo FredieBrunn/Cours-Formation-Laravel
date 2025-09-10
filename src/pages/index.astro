@@ -96,74 +96,74 @@ const chapters = [
   </head>
   <body class="bg-gradient-to-b from-blue-50 via-white to-white min-h-screen flex flex-col">
     <Header class="fixed top-0 left-0 right-0 z-50" />
-    <main class="container mx-auto px-4 py-8 ">
+    <main class="container mx-auto px-2 sm:px-4 py-4 sm:py-8">
       <!-- Hero Section -->
-      <section class="bg-gradient-to-r mt-16 md:mt-24 from-blue-600 to-indigo-700 rounded-2xl text-white p-8 mb-12 flex flex-col items-center gap-8 shadow-lg">
+      <section class="bg-gradient-to-r mt-14 sm:mt-16 md:mt-24 from-blue-600 to-indigo-700 rounded-2xl text-white p-4 sm:p-8 mb-8 sm:mb-12 flex flex-col items-center gap-4 sm:gap-8 shadow-lg text-sm sm:text-base">
         <div class="flex-shrink-0">
-          <img src="/assets/logo_md.png" alt="UniTechs Logo" class="w-72 h-48 rounded-xl shadow-lg" />
+          <img src="/assets/logo_md.png" alt="UniTechs Logo" class="w-40 h-24 sm:w-72 sm:h-48 rounded-xl shadow-lg" />
         </div>
         <div>
-          <h1 class="text-3xl md:text-4xl font-extrabold mb-2">🚀 Formation Laravel 10 avec TailwindCSS</h1>
-          <p class="instructor mb-2">Par <strong>Fredie TUEGUEM</strong> - Formateur à UniTechs</p>
-          <p class="mb-4">
+          <h1 class="text-xl sm:text-3xl md:text-4xl font-extrabold mb-1 sm:mb-2">🚀 Formation Laravel 10 avec TailwindCSS</h1>
+          <p class="instructor mb-1 sm:mb-2 text-xs sm:text-base">Par <strong>Fredie TUEGUEM</strong> - Formateur à UniTechs</p>
+          <p class="mb-2 sm:mb-4 text-xs sm:text-base">
             Maîtrisez Laravel 10 en créant une application complète de gestion des utilisateurs.
             Formation pratique et progressive pour développeurs débutants.
           </p>
-          <div class="flex flex-wrap gap-4 text-white justify-center">
-            <a href="/blog" class="bg-white text-blue-700 font-bold px-6 py-3 rounded-lg shadow hover:bg-blue-100 transition">Commencer le cours</a>
-            <a href="/about" class="border-2 border-white text-white font-bold px-6 py-3 rounded-lg hover:bg-white hover:text-blue-700 transition">À propos</a>
+          <div class="flex flex-wrap gap-2 sm:gap-4 text-white justify-center">
+            <a href="/blog" class="bg-white text-blue-700 font-bold px-4 py-2 sm:px-6 sm:py-3 rounded-lg shadow hover:bg-blue-100 transition text-xs sm:text-base">Commencer le cours</a>
+            <a href="/about" class="border-2 border-white text-white font-bold px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-white hover:text-blue-700 transition text-xs sm:text-base">À propos</a>
           </div>
         </div>
       </section>
 
       <!-- Objectifs -->
-      <section class="mb-12">
-        <div class="text-center mb-8">
-          <h2 class="text-2xl font-bold text-blue-700 mb-2">🎯 Objectifs de la formation</h2>
-          <p class="text-gray-600">Une formation complète et pratique pour maîtriser le développement web moderne</p>
+      <section class="mb-8 sm:mb-12">
+        <div class="text-center mb-4 sm:mb-8">
+          <h2 class="text-lg sm:text-2xl font-bold text-blue-700 mb-1 sm:mb-2">🎯 Objectifs de la formation</h2>
+          <p class="text-gray-600 text-xs sm:text-base">Une formation complète et pratique pour maîtriser le développement web moderne</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:shadow-lg transition">
-            <span class="text-4xl mb-2">💻</span>
-            <h3 class="text-blue-700 font-semibold mb-1">Laravel 10</h3>
-            <p class="text-gray-700 text-center">Maîtrisez le framework PHP le plus populaire avec ses dernières fonctionnalités</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+          <div class="bg-white rounded-xl shadow p-3 sm:p-6 flex flex-col items-center hover:shadow-lg transition">
+            <span class="text-2xl sm:text-4xl mb-1 sm:mb-2">💻</span>
+            <h3 class="text-blue-700 font-semibold mb-0.5 sm:mb-1 text-base sm:text-lg">Laravel 10</h3>
+            <p class="text-gray-700 text-center text-xs sm:text-base">Maîtrisez le framework PHP le plus populaire avec ses dernières fonctionnalités</p>
           </div>
-          <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:shadow-lg transition">
-            <span class="text-4xl mb-2">🎨</span>
-            <h3 class="text-blue-700 font-semibold mb-1">TailwindCSS</h3>
-            <p class="text-gray-700 text-center">Créez des interfaces modernes et responsives avec ce framework CSS utilitaire</p>
+          <div class="bg-white rounded-xl shadow p-3 sm:p-6 flex flex-col items-center hover:shadow-lg transition">
+            <span class="text-2xl sm:text-4xl mb-1 sm:mb-2">🎨</span>
+            <h3 class="text-blue-700 font-semibold mb-0.5 sm:mb-1 text-base sm:text-lg">TailwindCSS</h3>
+            <p class="text-gray-700 text-center text-xs sm:text-base">Créez des interfaces modernes et responsives avec ce framework CSS utilitaire</p>
           </div>
-          <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:shadow-lg transition">
-            <span class="text-4xl mb-2">👥</span>
-            <h3 class="text-blue-700 font-semibold mb-1">CRUD Complet</h3>
-            <p class="text-gray-700 text-center">Développez un système complet de gestion des utilisateurs avec toutes les fonctionnalités</p>
+          <div class="bg-white rounded-xl shadow p-3 sm:p-6 flex flex-col items-center hover:shadow-lg transition">
+            <span class="text-2xl sm:text-4xl mb-1 sm:mb-2">👥</span>
+            <h3 class="text-blue-700 font-semibold mb-0.5 sm:mb-1 text-base sm:text-lg">CRUD Complet</h3>
+            <p class="text-gray-700 text-center text-xs sm:text-base">Développez un système complet de gestion des utilisateurs avec toutes les fonctionnalités</p>
           </div>
-          <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:shadow-lg transition">
-            <span class="text-4xl mb-2">⚡</span>
-            <h3 class="text-blue-700 font-semibold mb-1">Bonnes Pratiques</h3>
-            <p class="text-gray-700 text-center">Apprenez les techniques professionnelles et les standards de l'industrie</p>
+          <div class="bg-white rounded-xl shadow p-3 sm:p-6 flex flex-col items-center hover:shadow-lg transition">
+            <span class="text-2xl sm:text-4xl mb-1 sm:mb-2">⚡</span>
+            <h3 class="text-blue-700 font-semibold mb-0.5 sm:mb-1 text-base sm:text-lg">Bonnes Pratiques</h3>
+            <p class="text-gray-700 text-center text-xs sm:text-base">Apprenez les techniques professionnelles et les standards de l'industrie</p>
           </div>
         </div>
       </section>
 
       <!-- Programme du cours -->
-      <section class="mb-12">
-        <div class="text-center mb-8">
-          <h2 class="text-2xl font-bold text-blue-700 mb-2">📚 Programme du cours</h2>
-          <p class="text-gray-600">8 chapitres progressifs pour une maîtrise complète</p>
+      <section class="mb-8 sm:mb-12">
+        <div class="text-center mb-4 sm:mb-8">
+          <h2 class="text-lg sm:text-2xl font-bold text-blue-700 mb-1 sm:mb-2">📚 Programme du cours</h2>
+          <p class="text-gray-600 text-xs sm:text-base">8 chapitres progressifs pour une maîtrise complète</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8">
           {chapters.map((chap, idx) => (
-            <a href={chap.link} class="flex bg-white rounded-xl shadow p-6 hover:shadow-lg transition border-l-4 border-blue-600 gap-6 animate-slide-in">
-              <div class="flex items-center justify-center font-bold text-2xl text-blue-600 bg-blue-50 rounded-full w-14 h-14 shadow-lg">
+            <a href={chap.link} class="flex bg-white rounded-xl shadow p-3 sm:p-6 hover:shadow-lg transition border-l-4 border-blue-600 gap-3 sm:gap-6 animate-slide-in">
+              <div class="flex items-center justify-center font-bold text-lg sm:text-2xl text-blue-600 bg-blue-50 rounded-full w-10 h-10 sm:w-14 sm:h-14 shadow-lg">
                 {(idx + 1).toString().padStart(2, "0")}
               </div>
               <div class="flex-1">
-                <h3 class="text-blue-700 font-semibold text-lg mb-1">{chap.title}</h3>
-                <p class="text-gray-700 mb-2">{chap.desc}</p>
+                <h3 class="text-blue-700 font-semibold text-base sm:text-lg mb-0.5 sm:mb-1">{chap.title}</h3>
+                <p class="text-gray-700 mb-1 sm:mb-2 text-xs sm:text-base">{chap.desc}</p>
                 <ul class="list-none pl-0">
                   {chap.topics.map(topic => (
-                    <li class="relative pl-6 mb-1 text-gray-600 text-sm">
+                    <li class="relative pl-5 sm:pl-6 mb-0.5 sm:mb-1 text-gray-600 text-xs sm:text-sm">
                       <span class="absolute left-0 text-blue-400 font-bold">✓</span>
                       {topic}
                     </li>
@@ -176,53 +176,53 @@ const chapters = [
       </section>
 
       <!-- Technologies -->
-      <section class="mb-12">
-        <div class="text-center mb-8">
-          <h2 class="text-2xl font-bold text-blue-700 mb-2">🛠️ Technologies utilisées</h2>
-          <p class="text-gray-600">Stack technologique moderne et professionnel</p>
+      <section class="mb-8 sm:mb-12">
+        <div class="text-center mb-4 sm:mb-8">
+          <h2 class="text-lg sm:text-2xl font-bold text-blue-700 mb-1 sm:mb-2">🛠️ Technologies utilisées</h2>
+          <p class="text-gray-600 text-xs sm:text-base">Stack technologique moderne et professionnel</p>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-          <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:shadow-lg transition">
-            <span class="text-4xl mb-2">🚀</span>
-            <h3 class="text-blue-700 font-semibold mb-1">Laravel 10</h3>
-            <p class="text-gray-700 text-center">Framework PHP élégant avec architecture MVC robuste</p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6">
+          <div class="bg-white rounded-xl shadow p-3 sm:p-6 flex flex-col items-center hover:shadow-lg transition">
+            <span class="text-2xl sm:text-4xl mb-1 sm:mb-2">🚀</span>
+            <h3 class="text-blue-700 font-semibold mb-0.5 sm:mb-1 text-base sm:text-lg">Laravel 10</h3>
+            <p class="text-gray-700 text-center text-xs sm:text-base">Framework PHP élégant avec architecture MVC robuste</p>
           </div>
-          <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:shadow-lg transition">
-            <span class="text-4xl mb-2">🎨</span>
-            <h3 class="text-blue-700 font-semibold mb-1">TailwindCSS</h3>
-            <p class="text-gray-700 text-center">Framework CSS utilitaire pour un design moderne et responsive</p>
+          <div class="bg-white rounded-xl shadow p-3 sm:p-6 flex flex-col items-center hover:shadow-lg transition">
+            <span class="text-2xl sm:text-4xl mb-1 sm:mb-2">🎨</span>
+            <h3 class="text-blue-700 font-semibold mb-0.5 sm:mb-1 text-base sm:text-lg">TailwindCSS</h3>
+            <p class="text-gray-700 text-center text-xs sm:text-base">Framework CSS utilitaire pour un design moderne et responsive</p>
           </div>
-          <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:shadow-lg transition">
-            <span class="text-4xl mb-2">🗄️</span>
-            <h3 class="text-blue-700 font-semibold mb-1">MySQL</h3>
-            <p class="text-gray-700 text-center">Base de données relationnelle performante et fiable</p>
+          <div class="bg-white rounded-xl shadow p-3 sm:p-6 flex flex-col items-center hover:shadow-lg transition">
+            <span class="text-2xl sm:text-4xl mb-1 sm:mb-2">🗄️</span>
+            <h3 class="text-blue-700 font-semibold mb-0.5 sm:mb-1 text-base sm:text-lg">MySQL</h3>
+            <p class="text-gray-700 text-center text-xs sm:text-base">Base de données relationnelle performante et fiable</p>
           </div>
-          <div class="bg-white rounded-xl shadow p-6 flex flex-col items-center hover:shadow-lg transition">
-            <span class="text-4xl mb-2">📄</span>
-            <h3 class="text-blue-700 font-semibold mb-1">Blade</h3>
-            <p class="text-gray-700 text-center">Moteur de templates Laravel puissant et intuitif</p>
+          <div class="bg-white rounded-xl shadow p-3 sm:p-6 flex flex-col items-center hover:shadow-lg transition">
+            <span class="text-2xl sm:text-4xl mb-1 sm:mb-2">📄</span>
+            <h3 class="text-blue-700 font-semibold mb-0.5 sm:mb-1 text-base sm:text-lg">Blade</h3>
+            <p class="text-gray-700 text-center text-xs sm:text-base">Moteur de templates Laravel puissant et intuitif</p>
           </div>
         </div>
       </section>
 
       <!-- CTA Section -->
-      <section class="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl shadow-lg p-8 text-white text-center mb-8">
-        <h2 class="text-2xl md:text-3xl font-bold mb-2">🚀 Prêt à commencer votre formation ?</h2>
-        <p class="mb-6">Rejoignez des centaines d'étudiants qui ont déjà maîtrisé Laravel avec UniTechs</p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-          <a href="/blog" class="bg-white text-blue-700 font-bold px-8 py-3 rounded-lg shadow hover:bg-blue-100 transition">Commencer maintenant</a>
-          <a href="/about" class="border-2 border-white text-white font-bold px-8 py-3 rounded-lg hover:bg-white hover:text-blue-700 transition">En savoir plus</a>
+      <section class="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl shadow-lg p-4 sm:p-8 text-white text-center mb-6 sm:mb-8 text-xs sm:text-base">
+        <h2 class="text-lg sm:text-2xl md:text-3xl font-bold mb-1 sm:mb-2">🚀 Prêt à commencer votre formation ?</h2>
+        <p class="mb-3 sm:mb-6">Rejoignez des centaines d'étudiants qui ont déjà maîtrisé Laravel avec UniTechs</p>
+        <div class="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center mb-3 sm:mb-6">
+          <a href="/blog" class="bg-white text-blue-700 font-bold px-6 py-2 sm:px-8 sm:py-3 rounded-lg shadow hover:bg-blue-100 transition text-xs sm:text-base">Commencer maintenant</a>
+          <a href="/about" class="border-2 border-white text-white font-bold px-6 py-2 sm:px-8 sm:py-3 rounded-lg hover:bg-white hover:text-blue-700 transition text-xs sm:text-base">En savoir plus</a>
         </div>
-        <div class="flex flex-wrap gap-6 justify-center">
-          <div class="flex items-center gap-2 text-lg">
+        <div class="flex flex-wrap gap-3 sm:gap-6 justify-center">
+          <div class="flex items-center gap-1 sm:gap-2 text-sm sm:text-lg">
             <span>✅</span>
             <span>Formation 100% pratique</span>
           </div>
-          <div class="flex items-center gap-2 text-lg">
+          <div class="flex items-center gap-1 sm:gap-2 text-sm sm:text-lg">
             <span>⏰</span>
             <span>À votre rythme</span>
           </div>
-          <div class="flex items-center gap-2 text-lg">
+          <div class="flex items-center gap-1 sm:gap-2 text-sm sm:text-lg">
             <span>🎯</span>
             <span>Projet concret</span>
           </div>
